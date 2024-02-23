@@ -1,0 +1,141 @@
+/* L'unité 'px' (pixels) est utilisée pour définir des dimensions fixes et absolues. 
+Elle est adaptée pour des éléments nécessitant une taille précise indépendamment de la taille de l'écran ou du conteneur parent. */
+
+/* L'unité 'em' est relative à la taille de la police de l'élément parent direct. 
+Elle est utile pour créer des mises en page scalables où les dimensions s'ajustent en fonction de la taille de la police de l'élément parent. */
+
+/* L'unité 'rem' est relative à la taille de la police de la racine (root) du document HTML. 
+Elle offre une gestion cohérente des tailles de police et d'autres dimensions basées sur une valeur de référence unique. */
+
+/* L'unité '%' (pourcentage) est utilisée pour définir des dimensions relatives par rapport à la taille du conteneur parent. 
+Elle est idéale pour créer des mises en page fluides et adaptatives, où les éléments s'ajustent en fonction de la taille de leur conteneur parent. */
+
+/* L'unité 'vh' (viewport height) est relative à la hauteur de la fenêtre d'affichage (viewport) du navigateur. 
+Elle est utile pour créer des éléments qui occupent une proportion fixe de la hauteur de l'écran. */
+
+/* L'unité 'vw' (viewport width) est relative à la largeur de la fenêtre d'affichage (viewport) du navigateur. 
+Elle est utile pour créer des éléments qui occupent une proportion fixe de la largeur de l'écran. */
+
+/* L'unité 'vmin' est relative à la plus petite dimension de la fenêtre d'affichage (viewport) du navigateur. 
+Elle est utile pour créer des éléments qui s'ajustent en fonction de la plus petite dimension de l'écran. */
+
+/* L'unité 'vmax' est relative à la plus grande dimension de la fenêtre d'affichage (viewport) du navigateur. 
+Elle est utile pour créer des éléments qui s'ajustent en fonction de la plus grande dimension de l'écran. */
+
+/*important a savoir 
+1rem = 16px (1 * 16 ) 
+2rem = 32px (2 * 16 )
+3rem = 48px (3 * 16 )
+ ...                */
+
+/*
+Reset des styles par défaut des navigateurs :
+- 'padding' et 'margin' à zéro pour tous les éléments.
+Assure une cohérence dans la présentation des éléments.
+*/
+
+/*
+Pour garantir que la mise en page occupe tout l'espace disponible dans le navigateur, 
+on définit une largeur de 100% et une hauteur de 100vh sur le body.
+Cela assure une couverture totale de l'écran, é
+vite les barres de défilement indésirables et facilite la conception de mises en page réactives.
+*/
+
+/*
+  Le sélecteur universel (*) cible tous les éléments HTML sur la page.
+  L'ensemble de règles * {} applique les styles spécifiés à tous les éléments de la page,
+   réinitialisant souvent les valeurs de 'padding' et de 'margin' à zéro.
+  Cela assure une cohérence dans la présentation des éléments en supprimant les espacements indésirables par défaut.
+*/
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: rgb(90, 34, 139);
+  padding: 50px;
+  border-radius: 50px;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  resize: none;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.inline {
+  display: inline;
+}
+
+a {
+  color: #dfdfe2;
+}
